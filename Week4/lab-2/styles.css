@@ -1,0 +1,14 @@
+nav {
+    height: 50px;
+    background-color: skyblue;
+}
+
+a nav {
+    text-decoration: none;
+    color: purple;
+}
+
+footer {
+    height: 20px;
+    background-color: lightgrey;
+}
