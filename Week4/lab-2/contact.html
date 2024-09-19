@@ -14,9 +14,53 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </h1>
+    <form action="formPost.html" method="get">
+        <div class="formfield">
+            <label for="phone">Cell #:</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div class="formfield">
+            <label for="reason">Reason:</label>
+            <select name="reason" id="reason">
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
+            </select>
+        </div>
+
+        <div class="formfield"></div>
+            <label for="type">Type:</label>
+            <input type="radio" name="type" id="type" value="champion"><label>Champion</label>
+            <input type="radio" name="type" id="type" value="villain"><label>Villain</label>
+        </div>
+
+        <div class="formfield">
+            <label for="like">Likeable?</label>
+            <input type="range" name="like" id="like" min="1" max="10" value="10">
+        </div>
+
+        <div class="formfield">
+            <label for="notes">Notes:</label>
+            <textarea name="notes" id="notes"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enter</button>
+        </div>
+    </form>
+
+    <fieldset>
+        <legend>Phone Number</legend>
+        <h2>XXX-XXX-XXXX</h2>
+    </fieldset>
+    <fieldset>
+        <legend>Email</legend>
+        <h2>tournament@email.com</h2>
+    </fieldset>
     
     <footer>
         <p>copyright KaitlynBurkholder &copy;</p>
+        <a href="contact.html">Contact Us Here</a>
+        <a href="contact.html">Go to Top</a>
     </footer>
 </body>
 </html>

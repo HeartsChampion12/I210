@@ -5,10 +5,48 @@ nav {
 
 a nav {
     text-decoration: none;
-    color: purple;
+    color: violet;
 }
 
 footer {
-    height: 20px;
+    height: 50px;
     background-color: lightgrey;
 }
+
+th {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+table {
+    border: 1px solid black;
+}
+
+form {
+    margin: 20px auto;
+    border: 1px solid black;
+    background-color: silver;
+    width: 400px;
+    padding: 10px;
+}
+
+.formfield {
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.formfield label {
+    font-weight: bold;
+}
+
+.formfield input {
+    height: 30px;
+    font-size: 24px;
+}
+
+.formfield input[type="sumbit"] {
+    border-radius: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
