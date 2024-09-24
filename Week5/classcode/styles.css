@@ -1,0 +1,36 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+nav {
+    background-color: navy;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+}
+
+footer {
+    background-color: navy;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+footer a {
+    color: white;
+}
