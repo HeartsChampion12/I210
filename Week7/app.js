@@ -45,7 +45,7 @@ const randomStuff=[true, 1, "blah", -200]
 //.6 objects - variables that you need to describe
 const person = {
     // property of the object
-    hairColor: "black"
+    hairColor: "black",
 // methods are like functions that belong to the object
 sayMyName() {}, 
 }; 
