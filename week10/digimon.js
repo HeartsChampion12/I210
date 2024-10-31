@@ -6,14 +6,14 @@ async function getDigimon() {
     const digimonTableRef = document.querySelector(".digimon-table"); 
     for (let i=0; i < digimonData.length; i++) {
         const digimon = digimonData[i]; 
-        console.log(`
+        digimonTableRef.innerHTML += `
             <tr>
                 <td>${digimon.name}</td>
                 <td>
-                    <img src="${digimon.img}"/>
+                    <img src="${digimon.img}" height="50"/>
                 </td>
                 <td>${digimon.level}</td>
             </tr>
-            `); 
+            `; 
     }
 }
