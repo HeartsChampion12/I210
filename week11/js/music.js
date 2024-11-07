@@ -1,20 +1,20 @@
-const artistsRef = document.querySelector("artists"); 
+const artistsRef = document.querySelector("#artists"); 
 
 async function getArtist(artistId) {
-    const artistResponse = await fetch(`https://api.deezer.com/artist/${artistId}`); 
+    const artistResponse = await fetch(`https://i210-music-api.vercel.app/artists`); 
     const artistData = await artistResponse.json(); 
 
-    console.log(artistData); 
+    return artistData
 }
 
 async function makeArtistList() {
-    const artistCount = 199; 
+    const allArtists = await getArtist(); 
 
-    for (let i = 0; i < artistCount.length; i++) {
-        const artist = await getARtist[i];
+    for (let i = 0; i < allArtists.length; i++) {
+        const artist = allArtists[i];
        
-        console.log(artist); 
+        artistsRef.innerHTML += `<img src="${artist.picture_medium}" height="100" />`
     }
 }
 
-getArtist(); 
+makeArtistList(); 
